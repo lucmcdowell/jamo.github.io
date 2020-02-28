@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Retrieve Grade</title>
+</head>
+<link href="Layout.css" rel="stylesheet" type="text/css" />
+<link href="menu.css" rel="stylesheet" type="text/css" />
+
+<body>
+  
+    
+<div id="Holder">
+<div id="Header">
+<div><img src="images/airtel.png" alt=""/></div>
+</div>
+<div id="NavBar">
+<h1>Retrieve your grade</h1>
+</div>
+
+<div id="Holder">
+<div style="width: 500px; margin: 0 auto; padding: 10px 0 40px;">
+     <div style="width: 500px; margin: 0 auto; padding: 10px 0 40px;">
+              
+          
+				   <div id="register">
+           
+  <form id ="rgstrfrm" action="insertorder.jsp" action="post">
+  <table width="575" border="0">
+   <tr>
+  <td colspan="2"><p class ="p">Name:
+  <label for="Name"></label>
+  
+  <input name="Name" type="text" class="StyleTxtField" id="username"  value="" required/>
+
+      </p></td>
+  </tr>
+ 
+  <tr>
+  <td colspan="2"><p class ="p">Student ID:
+  <label for="stdntId"></label>
+  <input name="StudentID" type="text" class="StyleTxtField" id="name"  value=""required/>
+  </p></td>
+  </tr>
+  <tr>
+       <td colspan="2"><p class ="p">Course:
+  <label for="username"></label>
+  <select name="courses[]" class="StyleCmbobx">
+          <option value="CS401">Modern Programming Practice</option>
+          <option value="CS422">Database Management Systems</option>
+          <option value="CS425">Software Engineering</option>
+          <option value="CS435">Algorithms</option>
+          <option value="CS471">Parallel Programming</option>
+          <option value="CS472">Web Programming</option>
+          <option value="CS473">Mobile Device Programming</option>
+          <option value="CS488">Big Data Analytics</option>
+          <option value="CS522">Big Data</option>
+          <option value="CS523">Big Data Technology</option>
+          <option value="CS525">Advanced Software Development</option>
+          <option value="CS544">Enterprise Architecture</option>
+          <option value="CS545">Web Application Architecture</option>
+          <option value="CS572">Modern Web Applications</option>
+          <option value="CS582">Machine Learning</option>
+      </select>
+  </p></td>
+  </tr>
+  
+    <tr>
+  <td colspan="2"><p class ="p">Ordered By:
+  <label for="username"></label>
+ <fieldset class="Stylefieldset">
+      <legend>Entry</legend>
+      <label> <input type="radio" name="entry" value="02" /> Feb</label>
+      <label> <input type="radio" name="entry" value="05" /> May</label>
+      <label> <input type="radio" name="entry" value="08" /> Aug</label>
+      <label> <input type="radio" name="entry" value="11" /> Nov</label>
+    </fieldset>
+  </p></td>
+  </tr>
+    <tr>
+  <td colspan="2"><p class ="p">Is This Your Grade?:
+  <label for="stdntId"></label>
+  <input name="yourgrade" type="checkbox" class="StyleChckbtns" id="name"  value=""required/>
+  </p></td>
+  </tr>
+ 
+  <td colspan="2">&nbsp;</td>
+    </tr>
+	<tr>
+	<td width ="342"><input name="rgstrbt" type="submit" class="StyleBtnGrade" id="regbtn" value="Get Grade!" /></td>
+	
+	</tr>
+	<tr>
+  <td colspan="2">&nbsp;</td>
+    </tr>
+	</table>
+  </form>		
+            </div>
+ 
+	  </div>
+	</div>
+</div>
+
+</body>
+</html>
