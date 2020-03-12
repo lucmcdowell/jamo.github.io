@@ -1,0 +1,89 @@
+<pre>
+1. Determine what this Javascript code will print out (without running it):
+
+x = 1;
+var a = 5;
+var b = 10;
+var c = function(a, b, c) {
+    var x = 10;
+    document.write(x);
+    document.write(a);
+    var f = function(a, b, c) {
+        b = a;
+        document.write(b);
+        b = c;
+        var x = 5;
+    }
+    f(a,b,c);
+    document.write(b);
+}
+c(8,9,10);
+document.write(b);
+document.write(x);
+
+Ans1: 10889101
+
+2. What is the difference between a method and function?
+
+Ans2: Method is a function with a defined this.
+
+3. What does 'this' refer to when used in a Java method?
+
+The class which the method is in.
+
+4. What does 'this' refer to when used in a JavaScript method?
+
+the constext (calling object)
+
+5. What does 'this' refer to when used in a JavaScript constructor function?
+
+According to W3Schools:
+In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
+
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+When f is called by x.f( ), what does 'this' refer to?
+
+object y
+
+7. What is a free variable in JavaScript?
+
+variable not locally declared or passed
+
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+
+var myobj = {
+    name: "fred",
+    major: "music",
+    calc: function(a, b) {
+        if(a==b) return a*b;
+        return Math.min(a,b);
+    }
+}
+
+9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+Employee objects have the following fields: name, salary, position.
+
+function Employee(name, salary, position) {
+    this.name = name;
+    this.salary = salary;
+    this.position = position;
+}
+var e = new Employee("Ammar", 600000, "CEO");
+
+
+10. Write a Javascript function that takes any number of input arguments and returns the product of the
+arguments.
+
+function productAll() {
+    var res = 1;
+    for (var i=0; i&lt;arguments.length; i++) {
+        res *= arguments[i];
+    }
+    return res;
+}
+
+11. Write an arrow function that returns the maximum of its three input arguments
+var max = (a, b, c) => Math.max(a, Math.max(b,c));
+
+</pre>
